@@ -17,8 +17,12 @@ const AthleteList = ({ athletes, onDelete }: AthleteListProps) => {
           <div>
             <h3>{athlete.name}</h3>
             <p>{athlete.country}</p>
+            <p>Points: {athlete.points}</p>
           </div>
-          <button onClick={() => onDelete(athlete.id)}>Kustuta</button>
+
+          <button onClick={() => onDelete(athlete.id)}>
+            Kustuta
+          </button>
         </div>
       ))}
     </div>
